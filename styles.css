@@ -1,0 +1,203 @@
+body {
+  --primary: 25, 91, 255;
+  --color: 44, 62, 80;
+}
+
+* {
+  list-style: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.con-user {
+  padding-top: 10px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+  padding-bottom: 10px;
+  border-radius: 0px 0px 40px 0px;
+}
+.con-user .avatar img {
+  width: 100px;
+  border-radius: 30px;
+}
+.con-user .title {
+  text-align: center;
+  width: 100%;
+}
+.con-user .title h1 {
+  font-size: 1.1rem;
+  padding: 0px 0px;
+}
+.con-user .title p {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  padding: 6px 10px;
+}
+.con-user .title p a {
+  color: rgb(var(--text));
+}
+
+.con-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 500px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 0px 30px 30px;
+}
+.con-menu button {
+  padding: 12px;
+  width: calc(50% - 4px);
+  border: 0px;
+  background: transparent;
+  font-weight: bold;
+  color: rgb(var(--text));
+  font-size: 1rem;
+  transition: all 0.25s ease;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  z-index: 2;
+}
+.con-menu button:active {
+  background: #ffffff;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+  color: rgb(var(--primary));
+}
+
+.con-contents {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  max-width: 500px;
+}
+.con-contents .con-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 15px 20px;
+  padding-top: 0px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  min-width: 100%;
+  scroll-snap-align: center;
+  flex: 1;
+  overflow: auto;
+  padding-top: 20px;
+}
+.con-contents .con-links a {
+  display: block;
+  width: 100%;
+  padding: 18px 22px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(var(--primary));
+  margin-bottom: 16px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0px 10px 30px 0px rgba(var(--primary), 0.15);
+}
+.con-contents .con-links a img {
+  max-width: 22px;
+  position: absolute;
+  left: 20px;
+}
+.con-contents .con-links a svg {
+  width: 22px;
+  fill: #ffffff;
+  position: absolute;
+  left: 20px;
+}
+.con-contents .con-links a i {
+  font-size: 1.6rem;
+  position: absolute;
+  left: 20px;
+}
+.con-contents .con-links a span {
+  text-align: center;
+}
+.con-contents .con-links a span p {
+  font-size: 0.8rem;
+}
+.con-contents .con-posts {
+  min-width: 100%;
+  scroll-snap-align: center;
+  overflow: auto;
+  padding-bottom: 30px;
+  max-width: 500px;
+}
+.con-contents .con-posts .post {
+  width: calc(100% - 40px);
+  overflow: hidden;
+  box-shadow: border-box;
+  display: block;
+  margin: 20px;
+  position: relative;
+  color: rgb(var(--text));
+  border-radius: 30px;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.con-contents .con-posts .post img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(0, -50%);
+}
+.con-contents .con-posts .post .con-file {
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+}
+.con-contents .con-posts .post footer {
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  padding: 10px 20px;
+}
+.con-contents .con-posts .post footer h3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.con-contents .con-posts .post footer h3 i {
+  margin-right: 5px;
+  font-size: 1.4rem;
+}
+.con-contents .con-posts .post .effect {
+  position: absolute;
+  bottom: 0px;
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(0deg, white 30%, rgba(0, 0, 0, 0.001) 100%);
+}
+
+/*# sourceMappingURL=styles.css.map */
