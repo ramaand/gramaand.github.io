@@ -7,7 +7,7 @@ body {
   outline: none;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 .con-user {
@@ -211,6 +211,9 @@ body {
 .con-contents .con-posts .post footer h3 span {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.con-contents .con-posts .post footer p {
+  font-size: 10pt;
 }
 .con-contents .con-posts .post .effect {
   position: absolute;
