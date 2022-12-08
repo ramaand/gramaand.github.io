@@ -1,3 +1,25 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    opacity: 0;
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+
 body {
     --primary: 25, 91, 255;
     --color: 44, 62, 80;
@@ -29,6 +51,8 @@ body {
     background: #ffffff;
     padding-bottom: 10px;
     border-radius: 0px 0px 40px 0px;
+    max-width: 500px;
+    margin: auto;
     .avatar {
         img {
             width: 100px;
@@ -158,7 +182,7 @@ body {
     .con-posts {
         min-width: 100%;
         scroll-snap-align: center;
-        overflow: hidden;
+        overflow: auto;
         padding-bottom: 30px;
         max-width: 500px;
         .post {
@@ -167,23 +191,24 @@ body {
             box-shadow: border-box;
             display: block;
             margin: 20px;
-            position: relative;
+            // position: relative;
             color: rgb(var(--text));
             border-radius: 30px;
             box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
             margin-top: 20px;
             margin-bottom: 20px;
+            text-decoration: none;
             img {
                 width: 100%;
-                position: absolute;
-                top: 50%;
-                left: 0px;
-                transform: translate(0, -50%);
+                // position: absolute;
+                // top: 50%;
+                // left: 0px;
+                // transform: translate(0, -50%);
             }
             .con-file {
                 width: 100%;
-                padding-bottom: 100%;
-                height: 0;
+                // padding-bottom: 100%;
+                // height: 0;
                 i {
                     position: absolute;
                     top: 0;
@@ -198,12 +223,12 @@ body {
                 }
             }
             footer {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                left: 0;
+                // position: absolute;
+                // bottom: 0;
+                // right: 0;
+                // left: 0;
                 z-index: 10;
-                padding: 10px 20px;
+                padding: 10px 20px 20px;
                 h3 {
                     display: flex;
                     align-items: center;
@@ -231,5 +256,17 @@ body {
                 background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(0, 0, 0, 0.001) 100%);
             }
         }
+    }
+}
+
+.tag-item {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 8px;
+    .tag {
+        padding: 4px 6px;
+        font-size: 8pt;
+        border-radius: 0.5rem;
+        border: 1px solid #eaeaea;
     }
 }
