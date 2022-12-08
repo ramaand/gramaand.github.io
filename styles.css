@@ -2,7 +2,6 @@ body {
   --primary: 25, 91, 255;
   --color: 44, 62, 80;
 }
-
 * {
   list-style: none;
   outline: none;
@@ -11,7 +10,6 @@ body {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-
 .con-user {
   padding-top: 10px;
   width: 100%;
@@ -20,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #ffffff;
+  background: #fff;
   padding-bottom: 10px;
   border-radius: 0px 0px 40px 0px;
 }
@@ -46,9 +44,8 @@ body {
   padding: 6px 10px;
 }
 .con-user .title p a {
-  color: rgb(var(--text));
+  color: #000;
 }
-
 .con-menu {
   display: flex;
   align-items: center;
@@ -68,7 +65,7 @@ body {
   border: 0px;
   background: transparent;
   font-weight: bold;
-  color: rgb(var(--text));
+  color: #000;
   font-size: 1rem;
   transition: all 0.25s ease;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
@@ -76,15 +73,14 @@ body {
   z-index: 2;
 }
 .con-menu button:active {
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
-  color: rgb(var(--primary));
+  color: #000;
 }
-
 .con-contents {
   margin: auto;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   align-items: flex-start;
@@ -118,15 +114,15 @@ body {
   padding: 18px 22px;
   text-decoration: none;
   font-size: 1rem;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(var(--primary));
+  background: #000;
   margin-bottom: 16px;
   border-radius: 25px;
   position: relative;
-  box-shadow: 0px 10px 30px 0px rgba(var(--primary), 0.15);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, );
 }
 .con-contents .con-links a img {
   max-width: 22px;
@@ -135,7 +131,7 @@ body {
 }
 .con-contents .con-links a svg {
   width: 22px;
-  fill: #ffffff;
+  fill: #fff;
   position: absolute;
   left: 20px;
 }
@@ -153,7 +149,7 @@ body {
 .con-contents .con-posts {
   min-width: 100%;
   scroll-snap-align: center;
-  overflow: auto;
+  overflow: hidden;
   padding-bottom: 30px;
   max-width: 500px;
 }
@@ -164,7 +160,7 @@ body {
   display: block;
   margin: 20px;
   position: relative;
-  color: rgb(var(--text));
+  color: #000;
   border-radius: 30px;
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
   margin-top: 20px;
@@ -196,7 +192,9 @@ body {
 }
 .con-contents .con-posts .post footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
+  right: 0;
+  left: 0;
   z-index: 10;
   padding: 10px 20px;
 }
@@ -204,17 +202,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-size: 12pt;
 }
 .con-contents .con-posts .post footer h3 i {
-  margin-right: 5px;
+  margin-right: 0.5rem;
   font-size: 1.4rem;
+}
+.con-contents .con-posts .post footer h3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .con-contents .con-posts .post .effect {
   position: absolute;
   bottom: 0px;
   height: 150px;
   width: 100%;
-  background: linear-gradient(0deg, white 30%, rgba(0, 0, 0, 0.001) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(0, 0, 0, 0.001) 100%);
 }
-
-/*# sourceMappingURL=styles.css.map */
