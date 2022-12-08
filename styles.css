@@ -233,3 +233,14 @@ body {
   width: 100%;
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(0, 0, 0, 0.001) 100%);
 }
+.tag-item {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 8px;
+}
+.tag-item .tag {
+  padding: 4px 6px;
+  font-size: 8pt;
+  border-radius: 0.5rem;
+  border: 1px solid #eaeaea;
+}
